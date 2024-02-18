@@ -2,7 +2,8 @@ from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
-# HOMEPAGE
+
+# HOME PAGE
 @app.route('/')
 @app.route('/index')
 @app.route('/home')
@@ -10,14 +11,14 @@ def home():
     return render_template('site/home.html')
 
 
-# HOMEPAGE
+# ABOUT US PAGE
 @app.route('/about-us')
 def about():
     title = 'About us'
     return render_template('site/about.html', title=title)
 
 
-# HOMEPAGE
+# CONTACT US PAGE
 @app.route('/contact-us')
 def contact():
     title = 'Contact us'
