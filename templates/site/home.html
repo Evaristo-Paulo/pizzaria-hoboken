@@ -1,164 +1,84 @@
-<!doctype html>
-<html lang="en">
+{% extends 'site/layout.html' %}
 
-<head>
-    <title>Super PIZZA</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% block content %}
+<main class="main-content">
+  <div class="home-content">
+    <section class="differencial">
+      <h2 class="main-title">A melhor pizza da região!</h2>
+      <div class="cardapio">
+        <figure>
+          <img src="https://cdn.pixabay.com/photo/2020/05/17/04/22/pizza-5179939__340.jpg" alt="" class="materialboxed">
+          <figcaption>Siciliana</figcaption>
+        </figure>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style-responsive.css') }}">
-</head>
+        <figure>
+          <img src="https://cdn.pixabay.com/photo/2015/07/15/19/44/pizza-846841__340.jpg" alt="" class="materialboxed">
+          <figcaption>Portuguesa</figcaption>
+        </figure>
+        
+        <figure>
+          <img src="https://cdn.pixabay.com/photo/2016/09/14/16/48/pizza-1669808__340.jpg" alt="" class="materialboxed">
+          <figcaption>Calabresa</figcaption>
+        </figure>
+      </div>
 
-<body>
-    <div class="main-wrapper">
-        <header class="main-header">
-            <nav>
-                <div class="nav-wrapper">
-                    <div class="brand-logo hide-on-med-and-down">
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/6b/9b/ee/super-pizza.jpg">
-                    </div>
-                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </section>
 
-                    <ul class="right">
-                        <li><a href="#email" class="email-link"><span class="email">Ligue agora!</span></a></li>
-                        <li><a href="#email" class="email-link"><span class="call-number">(+244) 938-709-693</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <ul class="nav-linear hide-on-med-and-down">
-                <li><a class="waves-effect" href="#!">Home</a></li>
-                <li><a class="waves-effect sidenav-close" href="about-us.html">Quem somos</a></li>
-                <li><a class="waves-effect" href="contact.html">Contacto</a></li>
-            </ul>
+    <article class="flavour">
+      <h2 class="sub-title">Nossos sabores</h2>
+      <div class="flavour-group">
 
-            <ul id="slide-out" class="sidenav">
-                <li>
-                    <div class="user-view">
-                        <div class="background">
-                            <img src="https://cdn.pixabay.com/photo/2018/07/09/09/34/pizza-3525673__340.jpg">
-                        </div>
-                        <div class="logo-inside">
-                            <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/6b/9b/ee/super-pizza.jpg">
-                        </div>
-                        <a href="home.html"><span class="white-text name">Super PIZZA</span></a>
-                        <a href="#email" class="email"><span class="email">Ligue agora!<br><span
-                                    class="call-number white-text email">(+244) 938-709-693</span></span></a>
+        <ul>
+          <li>À Moda da Casa</li>
+          <li>Aliche</li>
+          <li>Atum</li>
+          <li>Baiana</li>
+          <li>Bauru</li>
+          <li>Canadense</li>
+          <li>Catupiri</li>
+          <li>Calabresa</li>
+        </ul>
 
-                    </div>
-                </li>
-                <li><a class="waves-effect sidenav-close" href="#!">Home</a></li>
-                <li><a class="waves-effect sidenav-close" href="about-us.html">Quem somos</a></li>
-                <li><a class="waves-effect sidenav-close" href="contact.html">Contacto</a></li>
-            </ul>
+        <ul>
+          <li>Escarola</li>
+          <li>Frango</li>
+          <li>Margharita</li>
+          <li>Mexicana</li>
+          <li>Mussarela</li>
+          <li>Napolitana</li>
+          <li>Palmito</li>
+          <li>Portuguesa</li>
+        </ul>
 
-        </header>
+        <ul>
+          <li>Provolone</li>
+          <li>Quatro Queijo</li>
+          <li>Romana</li>
+          <li>Siciliana</li>
+        </ul>
 
-        <main class="main-content">
-            <div class="home-content">
-                <section class="differencial">
-                    <h2 class="main-title">A melhor pizza da região!</h2>
-                    <div class="cardapio">
-                        <figure>
-                            <img src="https://cdn.pixabay.com/photo/2020/05/17/04/22/pizza-5179939__340.jpg" alt=""
-                                class="materialboxed">
-                            <figcaption>Siciliana</figcaption>
-                        </figure>
+      </div>
+    </article>
 
-                        <figure>
-                            <img src="https://cdn.pixabay.com/photo/2015/07/15/19/44/pizza-846841__340.jpg" alt=""
-                                class="materialboxed">
-                            <figcaption>Portuguesa</figcaption>
-                        </figure>
+    <article class="history">
+      <h2 class="sub-title">Uma casa com história</h2>
 
-                        <figure>
+      <div class="history-img">
+        <img
+          src="https://images.pexels.com/photos/1653702/pexels-photo-1653702.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          alt="" class="materialboxed">
+      </div>
 
-                            <img src="https://cdn.pixabay.com/photo/2016/09/14/16/48/pizza-1669808__340.jpg" alt=""
-                                class="materialboxed">
-                            <figcaption>Calabresa</figcaption>
-                        </figure>
-                    </div>
+      <div class="history-description">
+        <p>Muito famosa na região por sua excelência na qualidade. A nossa pizzaria tem mais de 25 anos
+          de
+          história.</p>
 
-                </section>
+        <p><a href="#">Conheça</a></p>
+      </div>
 
-                <article class="flavour">
-                    <h2 class="sub-title">Nossos sabores</h2>
-                    <div class="flavour-group">
+    </article>
+  </div>
+</main>
 
-                        <ul>
-                            <li>À Moda da Casa</li>
-                            <li>Aliche</li>
-                            <li>Atum</li>
-                            <li>Baiana</li>
-                            <li>Bauru</li>
-                            <li>Canadense</li>
-                            <li>Catupiri</li>
-                            <li>Calabresa</li>
-                        </ul>
-
-                        <ul>
-                            <li>Escarola</li>
-                            <li>Frango</li>
-                            <li>Margharita</li>
-                            <li>Mexicana</li>
-                            <li>Mussarela</li>
-                            <li>Napolitana</li>
-                            <li>Palmito</li>
-                            <li>Portuguesa</li>
-                        </ul>
-
-                        <ul>
-                            <li>Provolone</li>
-                            <li>Quatro Queijo</li>
-                            <li>Romana</li>
-                            <li>Siciliana</li>
-                        </ul>
-
-                    </div>
-                </article>
-
-                <article class="history">
-                    <h2 class="sub-title">Uma casa com história</h2>
-
-                    <div class="history-img">
-                        <img src="https://images.pexels.com/photos/1653702/pexels-photo-1653702.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            alt="" class="materialboxed">
-                    </div>
-
-                    <div class="history-description">
-                        <p>Muito famosa na região por sua excelência na qualidade. A nossa pizzaria tem mais de 25 anos
-                            de
-                            história.</p>
-
-                        <p><a href="#">Conheça</a></p>
-                    </div>
-
-                </article>
-            </div>
-
-
-        </main>
-
-        <footer class="main-footer">
-            <p>&copy; 2020 universus - todos os direitos reservados </p>
-        </footer>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <script src="{{ url_for('static', filename = 'js/script.js') }}"></script>i
-</body>
-
-</html>
+{% endblock content %}
