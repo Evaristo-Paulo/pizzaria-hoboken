@@ -13,13 +13,13 @@ def home():
 # HOMEPAGE
 @app.route('/about-us')
 def about():
-    return render_template('about.html')
+    return render_template('site/about.html')
 
 
 # HOMEPAGE
 @app.route('/contact-us')
 def contact():
-    return render_template('contact.html')
+    return render_template('site/contact.html')
 
 
 if __name__ == '__main__':
