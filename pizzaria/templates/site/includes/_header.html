@@ -15,9 +15,9 @@
         </div>
     </nav>
     <ul class="nav-linear hide-on-med-and-down">
-        <li><a class="waves-effect" href="{{ url_for('home') }}">Home</a></li>
-        <li><a class="waves-effect sidenav-close" href="{{ url_for('about') }}">Quem somos</a></li>
-        <li><a class="waves-effect" href="{{ url_for('contact') }}">Contacto</a></li>
+        <li><a class="waves-effect" href="{{ url_for('main.home') }}">Home</a></li>
+        <li><a class="waves-effect sidenav-close" href="{{ url_for('main.about') }}">Quem somos</a></li>
+        <li><a class="waves-effect" href="{{ url_for('main.contact') }}">Contacto</a></li>
     </ul>
 
     <ul id="slide-out" class="sidenav">
@@ -34,13 +34,12 @@
                 <a href="home.html"><span class="white-text name">Super PIZZA</span></a>
                 <a href="#email" class="email"><span class="email">Ligue agora!<br><span
                             class="call-number white-text email">(+244) 938-709-693</span></span></a>
-
             </div>
         </li>
-        <!-- MENU HUMBURGER, PHONE MENU -->>
-        <li><a class="waves-effect sidenav-close" href="{{ url_for('home') }}">Home</a></li>
-        <li><a class="waves-effect sidenav-close" href="{{ url_for('about') }}">Quem somos</a></li>
-        <li><a class="waves-effect sidenav-close" href="{{ url_for('contact') }}">Contacto</a></li>
+        <!-- MENU HUMBURGER, PHONE MENU -->
+        <li><a class="waves-effect sidenav-close" href="{{ url_for('main.home') }}">Home</a></li>
+        <li><a class="waves-effect sidenav-close" href="{{ url_for('main.about') }}">Quem somos</a></li>
+        <li><a class="waves-effect sidenav-close" href="{{ url_for('main.contact') }}">Contacto</a></li>
     </ul>
 
 </header>
