@@ -4,8 +4,8 @@ app = Flask(__name__)
 
 # HOMEPAGE
 @app.route('/')
-@app.route('/home')
 @app.route('/index')
+@app.route('/home')
 def home():
     return render_template('site/home.html')
 
@@ -13,13 +13,15 @@ def home():
 # HOMEPAGE
 @app.route('/about-us')
 def about():
-    return render_template('site/about.html')
+    title = 'About us'
+    return render_template('site/about.html', title=title)
 
 
 # HOMEPAGE
 @app.route('/contact-us')
 def contact():
-    return render_template('site/contact.html')
+    title = 'Contact us'
+    return render_template('site/contact.html', title=title)
 
 
 if __name__ == '__main__':

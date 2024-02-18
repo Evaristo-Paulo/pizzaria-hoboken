@@ -34,9 +34,10 @@
 
             </div>
         </li>
-        <li><a class="waves-effect sidenav-close" href="#!">Home</a></li>
-        <li><a class="waves-effect sidenav-close" href="about-us.html">Quem somos</a></li>
-        <li><a class="waves-effect sidenav-close" href="contact.html">Contacto</a></li>
+        <!-- MENU HUMBURGER, PHONE MENU -->>
+        <li><a class="waves-effect sidenav-close" href="{{ url_for('home') }}">Home</a></li>
+        <li><a class="waves-effect sidenav-close" href="{{ url_for('about') }}">Quem somos</a></li>
+        <li><a class="waves-effect sidenav-close" href="{{ url_for('contact') }}">Contacto</a></li>
     </ul>
 
 </header>
