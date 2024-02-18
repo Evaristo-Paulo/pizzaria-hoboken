@@ -1,0 +1,198 @@
+@media screen and (max-width: 350px) {
+    .main-content {
+        padding: 0 10px;
+        text-align: justify;
+    }
+
+    .differencial h2.main-title {
+        text-align: none;
+    }
+
+    .flavour-group li {
+        font-size: .85rem;
+    }
+
+    .history-img {
+        width: 100px;
+        height: 150px;
+    }
+
+
+}
+
+@media screen and (max-width: 992.5px) {
+    .nav-linear {
+        display: none;
+    }
+
+    .main-wrapper {
+        grid-auto-rows: 90px auto 40px;
+    }
+
+    .main-header {
+        grid-area: main-header;
+    }
+
+}
+
+
+@media screen and (min-width: 460px) {
+    .gallery-group {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media screen and (min-width: 660px) {
+    .gallery-group {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .home-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'differencial differencial'
+            'flavour history';
+        grid-column-gap: 50px;
+    }
+
+
+}
+
+@media screen and (min-width: 860px) {
+
+    .main-container-about-us {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'story gallery'
+            'mission skill'
+            '. .'
+            '. .';
+        grid-gap: 100px 50px;
+    }
+
+    .gallery-group {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+
+    .gallery-group {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .main-wrapper {
+        grid-auto-rows: 170px auto 40px;
+    }
+
+    .nav-linear {
+        background-color: #f3bf5f;
+    }
+
+    .nav-linear li {
+        display: inline-block;
+        padding: 5px 8px;
+        color: #fff;
+    }
+
+    .nav-linear li a {
+        color: #fff;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100%;
+    }
+
+    .right .call-number {
+        font-size: .9rem;
+    }
+
+    nav {
+        padding: 30px;
+        height: 134px;
+    }
+
+    .nav-wrapper .brand-logo {
+        width: 100px;
+        height: 100px;
+        margin-top: -14px;
+    }
+
+    .main-content {
+        padding-top: 100px;
+    }
+
+    .sub-title {
+        padding-bottom: 20px;
+    }
+
+    .main-container-about-us {
+        grid-template-columns: .7fr 1fr;
+        grid-template-areas: 'story gallery'
+            'mission skill';
+        padding-top: 50px;
+        grid-gap: 100px 100px;
+    }
+
+    .gallery-group {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .location {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 50px;
+    }
+
+    .google-map {
+        height: 200px;
+    }
+
+    iframe {
+        height: 100%;
+    }
+
+    .main-container-contact {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        grid-template-areas: 'contact location';
+        border-top: 2px solid #000;
+        padding-top: 50px;
+        grid-gap: 100px 100px;
+
+    }
+
+    .address-item {
+        margin-top: 0px
+    }
+
+    .home-content {
+        grid-template-columns: 400px auto;
+        grid-template-areas: 'differencial differencial'
+            'flavour history';
+        grid-column-gap: 70px;
+    }
+
+}
+
+
+@media screen and (min-width: 1175px) {
+
+    .gallery-group {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
